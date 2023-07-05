@@ -50,6 +50,10 @@
 			height: 70vh;
 			#hi {
 				margin-bottom: 50px;
+				text-align: center;
+				@media only screen and (max-width: 920px) {
+					font-size: 4rem;
+				}
 			}
 			#shapes {
 				display: grid;

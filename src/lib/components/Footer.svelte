@@ -38,6 +38,16 @@
 </footer>
 
 <style lang="scss">
+	@media only screen and (max-width: 920px) {
+		footer {
+			#shapes-container {
+				display: none;
+			}
+			#menu {
+				padding-left: 30px;
+			}
+		}
+	}
 	footer {
 		background-color: #ecfcff;
 		padding: 20px;
