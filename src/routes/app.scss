@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+	body {
+		font-family: 'Outfit', sans-serif;
+		font-weight: 500;
+		box-sizing: border-box;
+		p,
+		span {
+			color: #3b3b3b;
+			line-height: 2.2rem;
+		}
+		a {
+			color: #3b3b3b;
+			&.drawline {
+				text-decoration: none;
+				display: inline-block;
+				&::after {
+					content: '';
+					display: block;
+					width: 0;
+					height: 2px;
+					background: #3b3b3b;
+					transition: width 0.3s;
+				}
+				&:hover::after {
+					width: 100%;
+					transition: width 0.3s;
+				}
+			}
+		}
+		hr {
+			border: none;
+			height: 2px;
+			// border-radius: 50%;
+			background-color: #e6e8ea;
+			width: 200px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		h1 {
+			font-size: 5rem;
+			font-weight: 700;
+			color: #000;
+		}
+		h2 {
+			font-size: 2rem;
+			font-weight: 700;
+			padding: 5px 0;
+		}
+		h3 {
+			font-size: 1.2rem;
+			font-weight: 700;
+		}
+		h4 {
+			font-size: 1.1rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			color: #5edfff;
+		}
+	}
+}
+
+// Slide in right, fade in
+[data-scroll][data-scroll-type='right-fade'] {
+	transition: 1s;
+}
+[data-scroll='in'][data-scroll-type='right-fade'] {
+	opacity: 1;
+	transform: translateX(0);
+}
+[data-scroll='out'][data-scroll-type='right-fade'] {
+	opacity: 0;
+	transform: translateX(-1000px);
+}
+
+// Slide in left, fade in
+[data-scroll][data-scroll-type='left-fade'] {
+	transition: 1s;
+}
+[data-scroll='in'][data-scroll-type='left-fade'] {
+	opacity: 1;
+	transform: translateX(0);
+}
+[data-scroll='out'][data-scroll-type='left-fade'] {
+	opacity: 0;
+	transform: translateX(1000px);
+}
+
+// Pop
+[data-scroll][data-scroll-type='pop'] {
+	transition: 1s;
+}
+[data-scroll='in'][data-scroll-type='pop'] {
+	opacity: 1;
+	transform: scale(1.1);
+}
+[data-scroll='out'][data-scroll-type='pop'] {
+	opacity: 0;
+	transform: scale(1);
+}
+
+// // Slide in top, fade in
+// [data-scroll][data-scroll-type='3'] {
+//   transition: 1s;
+// }
+// [data-scroll='in'][data-scroll-type='3'] {
+//   opacity: 1;
+//   transform: translateY(0);
+// }
+// [data-scroll='out'][data-scroll-type='3'] {
+//   opacity: 0;
+//   transform: translateY(-20px);
+// }
