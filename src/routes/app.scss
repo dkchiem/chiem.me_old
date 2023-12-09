@@ -1,13 +1,13 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 html {
 	scroll-behavior: smooth;
 	body {
 		font-family: 'Outfit', sans-serif;
 		font-weight: 500;
-		box-sizing: border-box;
 		p,
 		span {
 			color: #3b3b3b;

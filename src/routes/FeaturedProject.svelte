@@ -6,16 +6,11 @@
 <section id="featured-project">
 	<Project
 		topTitle="Featured Project"
-		title="Capture the Flag"
-		description="This is a small multiplayer &quot;capture the flag&quot; game I made for a school project. It is written
-	in JavaScript. The package &quot;Socket.IO&quot; is used for the multiplayer functionality. The goal is
-	to capture the other team's flag and bring it back to your own team's chest. There is a blue
-	team and a red team. The game is played in a 2D world with walls and speed boosts. Players are
-	automatically split into two teams by the server. Have fun!"
-		image="/capture-the-flag.png"
+		title="Un robot grimpeur?"
+		description="A wall climbing robot that uses suction cups presented at the Expo-Science Hydro-Québec science fair in 2022. This project was created in collaboration with Samuel Martineau."
+		image="/robot-grimpeur.jpg"
 	>
-		<Button text="Source code" href="https://github.com/dkchiem/Capture-the-Flag" />
-		<Button text="Play!" href="https://ctf.chiem.me" />
+		<Button text="View organization" href="https://github.com/Robot-Grimpeur" />
 	</Project>
 </section>
 

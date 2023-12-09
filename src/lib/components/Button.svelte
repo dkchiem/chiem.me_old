@@ -1,9 +1,10 @@
 <script lang="ts">
 	export let text: string;
 	export let href: string;
+	export let newTab: boolean = true;
 </script>
 
-<a class="button" {href}>
+<a class="button" target={newTab ? '_blank' : '_self'} {href}>
 	<div class="button-container">
 		{text}
 	</div>
