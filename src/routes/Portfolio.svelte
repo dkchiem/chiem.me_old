@@ -1,6 +1,6 @@
 <script>
-	import Project from '../lib/components/Project.svelte';
-	import Button from '../lib/components/Button.svelte';
+	import Project from '$lib/components/Project.svelte';
+	import Button from '$lib/components/Button.svelte';
 	// import { onMount } from 'svelte';
 
 	// onMount(() => {
@@ -26,7 +26,7 @@
 	<Project
 		title="Capture the Flag"
 		description="A small multiplayer capture the flag game written in JavaScript that I made for a school project. The Socket.IO package was used for the multiplayer functionality. The goal of this game is to capture the other team's flag and bring it back to your own team's chest. The first team that captures the other team's flag three times will win. The game is played in a 2D world with walls and speed boosts. Players are automatically split into two teams by the server."
-		image="/capture-the-flag.png"
+		image="/capture-the-flag.jpg"
 	>
 		<Button text="Source code" href="https://github.com/dkchiem/Capture-the-Flag" />
 		<Button text="Play" href="https://ctf.chiem.me" />
@@ -34,9 +34,10 @@
 	<Project
 		title="Chez Tomio Website"
 		description="A website for the Chez Tomio restaurant and food truck built with React. This project was created in collaboration with Samuel Martineau."
-		image="/chez-tomio-website.png"
+		image="/chez-tomio-website.jpg"
 	>
-		<Button text="View website" href="https://cheztomio.com" />
+		<Button text="Source code" href="https://github.com/Chez-Tomio/Chez-Tomio" />
+		<Button text="View organization" href="https://github.com/Chez-Tomio" />
 	</Project>
 	<Project
 		title="make-icns"
@@ -69,7 +70,7 @@
 	<Project
 		title="Tetris 13kB Game"
 		description="A Tetris game written in TypeScript that is smaller than 13kB after being compressed. This game was built in collaboration with Samuel Martineau."
-		image="/tetris-3kb-game.png"
+		image="/tetris-3kb-game.jpg"
 	>
 		<Button text="Source code" href="https://github.com/Samuel-Martineau/Tetris-13kB-Game" />
 		<Button text="Play" href="https://tetris-13kb-game.netlify.app/" />
@@ -93,7 +94,7 @@
 	<Project
 		title="CodingForYou"
 		description="A website development company that I created with Samuel Martineau. Its website was built with Svelte and Sapper and contained an integrated ordering and payment system."
-		image="/codingforyou.png"
+		image="/codingforyou.jpg"
 	>
 		<Button text="View organization" href="https://github.com/CodingForYou-net" />
 	</Project>

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Project from '../lib/components/Project.svelte';
-	import Button from '../lib/components/Button.svelte';
+	import Project from '$lib/components/Project.svelte';
+	import Button from '$lib/components/Button.svelte';
 </script>
 
 <section id="featured-project">

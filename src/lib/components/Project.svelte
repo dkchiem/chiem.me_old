@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { lazyLoad } from '$lib/lazyLoad';
+
 	export let topTitle: string = '';
 	export let title: string;
 	export let description: string;
@@ -19,7 +21,7 @@
 	</div>
 	{#if image}
 		<div id="project-image" class:image-fit={imageFit}>
-			<img src={image} alt={title} />
+			<img use:lazyLoad={image} alt={'Photo for ' + title} />
 		</div>
 	{/if}
 </div>

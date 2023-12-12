@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Skill from '../lib/components/Skill.svelte';
+	import Skill from '$lib/components/Skill.svelte';
 </script>
 
 <section id="my-skills">
