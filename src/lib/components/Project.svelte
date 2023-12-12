@@ -77,6 +77,10 @@
 			background-color: white;
 			filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.15));
 			box-sizing: border-box;
+			img {
+				opacity: 0;
+				transition: all 1s ease;
+			}
 			&.image-fit {
 				padding: 10px;
 				img {
