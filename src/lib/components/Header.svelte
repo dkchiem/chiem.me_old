@@ -11,6 +11,7 @@
 	let navOpen = false;
 
 	function addHeaderBottomBorder() {
+		if (!header) return;
 		if (window.scrollY > 0) {
 			header.style.backgroundColor = 'var(--black-1)';
 		} else {

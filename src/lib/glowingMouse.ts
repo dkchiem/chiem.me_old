@@ -1,23 +1,23 @@
 export function glow(node: HTMLElement, options: { glowColor: string; backgroundColor: string }) {
-	const updateBackground = (x: number, y: number) => {
+	let clientX = 0;
+	let clientY = 0;
+
+	const updateBackground = () => {
+		const x = window.scrollX + clientX;
+		const y = window.scrollY + clientY;
+		console.log(x, y);
 		const xy = `${x}px ${y}px`;
 		node.style.background = `radial-gradient(circle ${window.innerHeight}px at ${xy}, ${options.glowColor}, ${options.backgroundColor}`;
 	};
 
-	let clientX = 0;
-	let clientY = 0;
 	const handleMouseMove = (event: MouseEvent | WheelEvent) => {
 		clientX = event.clientX;
 		clientY = event.clientY;
-		const x = event.pageX - node.offsetLeft;
-		const y = event.pageY - node.offsetTop;
-		updateBackground(x, y);
+		updateBackground();
 	};
 
 	const handleScroll = (event: Event) => {
-		const x = clientX;
-		const y = window.scrollY + clientY;
-		updateBackground(x, y);
+		updateBackground();
 	};
 
 	document.addEventListener('mousemove', handleMouseMove, true);
