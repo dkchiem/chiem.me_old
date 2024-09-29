@@ -6,9 +6,9 @@
 	<div id="menu">
 		<h3>Dan Chiem</h3>
 		<ul>
-			<li><a class="drawline" href="#my-skills">My Skills</a></li>
+			<li><a class="drawline" href="#skills">Skills</a></li>
 			<li><a class="drawline" href="#portfolio">Portfolio</a></li>
-			<li><a class="drawline" href="#contact-me">Contact Me</a></li>
+			<li><a class="drawline" href="#contact">Contact</a></li>
 		</ul>
 	</div>
 	<Social />

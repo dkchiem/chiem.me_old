@@ -10,7 +10,7 @@
 		<Social />
 	</div>
 
-	<img src="/headshot.png" alt="" />
+	<img src="/headshot.png" alt="" loading="lazy" />
 </section>
 
 <style lang="scss">
