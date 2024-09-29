@@ -15,16 +15,6 @@
 </footer>
 
 <style lang="scss">
-	@media only screen and (max-width: 920px) {
-		footer {
-			#shapes-container {
-				display: none;
-			}
-			#menu {
-				padding-left: 30px;
-			}
-		}
-	}
 	footer {
 		padding: 50px 25%;
 		background-color: var(--dark-1);
@@ -65,6 +55,22 @@
 			&:hover {
 				transform: scale(110%);
 			}
+		}
+	}
+
+	// Medium screens
+	@media only screen and (max-width: 920px) {
+		footer {
+			padding: 50px 20%;
+		}
+	}
+
+	// Small screens
+	@media only screen and (max-width: 600px) {
+		footer {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
 		}
 	}
 </style>

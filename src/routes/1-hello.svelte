@@ -39,8 +39,6 @@
 			max-width: 50%;
 			@media only screen and (max-width: 1400px) {
 				right: 20px;
-			}
-			@media only screen and (max-width: 1400px) {
 				display: none;
 			}
 		}
