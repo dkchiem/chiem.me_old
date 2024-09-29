@@ -26,6 +26,7 @@
 		}
 	}
 	footer {
+		padding: 50px 25%;
 		background-color: var(--dark-1);
 		overflow: hidden;
 		display: flex;

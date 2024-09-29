@@ -14,5 +14,6 @@
 		mask-repeat: no-repeat;
 		mask-size: contain;
 		mask-position: center;
+		// box-shadow: inset 0 0 10px var(--dark-1);
 	}
 </style>

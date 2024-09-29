@@ -37,7 +37,6 @@
 			filter: contrast(1.2) grayscale(100%);
 			max-height: 80%;
 			max-width: 50%;
-			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 			@media only screen and (max-width: 1400px) {
 				right: 20px;
 			}

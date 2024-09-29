@@ -1,13 +1,24 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
+	let header: HTMLElement;
+
+	onMount(() => {
+		addHeaderBottomBorder();
+		document.addEventListener('scroll', (e) => {
+			addHeaderBottomBorder();
+		});
+	});
+
 	let navOpen = false;
 
-	// onMount(() => {
-	// 	document.addEventListener('click', (e) => {
-	// 		if (e.target && !navbar.contains(e.target)) {
-	// 			navOpen = false;
-	// 		}
-	// 	});
-	// });
+	function addHeaderBottomBorder() {
+		if (window.scrollY > 0) {
+			header.style.backgroundColor = 'var(--black-1)';
+		} else {
+			header.style.backgroundColor = 'transparent';
+		}
+	}
 
 	function openSidenav() {
 		navOpen = true;
@@ -36,7 +47,7 @@
 	}
 </script>
 
-<header>
+<header bind:this={header}>
 	<svg id="logo" viewBox="0 0 420 360" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path
 			fill-rule="evenodd"
@@ -107,11 +118,11 @@
 		height: 100px;
 		width: 100%;
 		padding: 0 10%;
-		background-color: var(--black-1);
 		z-index: 500;
 		display: flex;
 		align-items: center;
 		position: fixed;
+		transition: background-color 0.3s;
 		#logo {
 			height: 2rem;
 			margin-right: auto;

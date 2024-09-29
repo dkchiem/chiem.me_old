@@ -21,6 +21,9 @@
 <style lang="scss">
 	section {
 		background-color: var(--dark-1);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		h2 {
 			text-align: center;
 			margin-bottom: 30px;
@@ -31,6 +34,7 @@
 			justify-content: center;
 			flex-wrap: wrap;
 			gap: 30px 100px;
+			max-width: 800px;
 		}
 	}
 </style>
