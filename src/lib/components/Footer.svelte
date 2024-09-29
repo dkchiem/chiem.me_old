@@ -1,40 +1,17 @@
+<script lang="ts">
+	import Social from './Social.svelte';
+</script>
+
 <footer>
-	<div id="shapes-container">
-		<div id="shapes">
-			<div class="shape square light-blue" />
-			<div class="shape circle gray" />
-			<div class="shape square light-blue" />
-			<div class="shape empty" />
-			<div class="shape empty" />
-			<div class="shape square blue" />
-			<div class="shape circle gray" />
-			<div class="shape square light-blue" />
-			<div class="shape circle gray" />
-			<div class="shape square light-blue" />
-			<div class="shape square blue" />
-			<div class="shape empty" />
-		</div>
-	</div>
 	<div id="menu">
-		<h3>Vu Dang Khoa Chiem</h3>
+		<h3>Dan Chiem</h3>
 		<ul>
 			<li><a class="drawline" href="#my-skills">My Skills</a></li>
 			<li><a class="drawline" href="#portfolio">Portfolio</a></li>
 			<li><a class="drawline" href="#contact-me">Contact Me</a></li>
 		</ul>
 	</div>
-	<a href="https://github.com/dkchiem">
-		<svg xmlns="http://www.w3.org/2000/svg" id="github-icon" viewBox="0 0 32.579 31.775">
-			<path
-				id="Path_1"
-				data-name="Path 1"
-				d="M152.608,107.44a16.291,16.291,0,0,0-5.148,31.747c.815.149,1.112-.353,1.112-.785,0-.387-.014-1.411-.022-2.771-4.531.985-5.487-2.183-5.487-2.183a4.315,4.315,0,0,0-1.809-2.383c-1.479-1.011.112-.99.112-.99a3.42,3.42,0,0,1,2.495,1.678,3.468,3.468,0,0,0,4.741,1.354,3.482,3.482,0,0,1,1.034-2.178c-3.617-.411-7.42-1.808-7.42-8.051a6.3,6.3,0,0,1,1.677-4.371,5.852,5.852,0,0,1,.16-4.311s1.367-.438,4.479,1.67a15.448,15.448,0,0,1,8.156,0c3.11-2.108,4.475-1.67,4.475-1.67a5.854,5.854,0,0,1,.163,4.311A6.286,6.286,0,0,1,163,122.878c0,6.258-3.809,7.635-7.438,8.038a3.889,3.889,0,0,1,1.106,3.017c0,2.178-.02,3.935-.02,4.469,0,.435.294.942,1.12.783a16.292,16.292,0,0,0-5.16-31.745Z"
-				transform="translate(-136.32 -107.44)"
-				fill="#0f0c0d"
-				fill-rule="evenodd"
-			/>
-		</svg>
-	</a>
+	<Social />
 </footer>
 
 <style lang="scss">
@@ -49,57 +26,19 @@
 		}
 	}
 	footer {
-		background-color: #ecfcff;
-		padding: 20px;
-		margin-top: 10px;
-		height: 300px;
+		background-color: var(--dark-1);
 		overflow: hidden;
 		display: flex;
-		position: relative;
-		#shapes-container {
-			flex: 1;
-			position: relative;
-			#shapes {
-				display: grid;
-				grid-template-columns: repeat(4, 1fr);
-				grid-gap: 12px;
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				transform: translate(-50%, -35%);
-				.shape {
-					height: 100px;
-					width: 100px;
-					&.square {
-						border-radius: 20px;
-					}
-					&.circle {
-						border-radius: 100%;
-					}
-					&.blue {
-						background-color: #3e64ff;
-						box-shadow: inset 10px 10px 20px darken(#3e64ff, 25%);
-					}
-					&.light-blue {
-						background-color: #5edfff;
-						box-shadow: inset 10px 10px 20px darken(#5edfff, 25%);
-					}
-					&.gray {
-						background-color: #e6e8ea;
-						box-shadow: inset 10px 10px 20px darken(#e6e8ea, 25%);
-					}
-				}
-			}
-		}
+		justify-content: space-between;
+		align-items: end;
 		#menu {
-			flex: 1;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			z-index: 999;
 			h3 {
-				color: #5edfff;
 				padding: 15px 0;
+				color: var(--accent-1);
 			}
 			ul {
 				display: flex;

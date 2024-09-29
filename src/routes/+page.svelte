@@ -1,22 +1,11 @@
 <script lang="ts">
-	import Hello from './Hello.svelte';
-	import FeaturedProject from './FeaturedProject.svelte';
-	import MySkills from './MySkills.svelte';
-	import Portfolio from './Portfolio.svelte';
-	import ContactMe from './ContactMe.svelte';
-	import anime from 'animejs';
-
-	// anime({
-	// 	targets: 'div',
-	// 	translateX: 250,
-	// 	rotate: '1turn',
-	// 	backgroundColor: '#FFF',
-	// 	duration: 800
-	// });
+	import Hello from './1-hello.svelte';
+	import Skills from './2-skills.svelte';
+	import Portfolio from './3-portfolio.svelte';
+	import Contact from './4-contact.svelte';
 </script>
 
 <Hello />
-<FeaturedProject />
-<MySkills />
+<Skills />
 <Portfolio />
-<ContactMe />
+<Contact />

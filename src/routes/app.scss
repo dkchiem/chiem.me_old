@@ -1,69 +1,73 @@
+:root {
+	// https://coolors.co/palette/0466c8-0353a4-023e7d-002855-001845-001233-33415c-5c677d-7d8597-979dac
+	--accent-1: #0080ff;
+	--gray-1: #5c677d;
+	--dark-1: #001233;
+	--black-2: #000d24;
+	--black-1: #000816;
+	--white: #ffffff;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 html {
 	scroll-behavior: smooth;
-	body {
-		font-family: 'Outfit', sans-serif;
-		font-weight: 500;
-		p,
-		span {
-			color: #3b3b3b;
-			line-height: 2.2rem;
-		}
-		a {
-			color: #3b3b3b;
-			&.drawline {
-				text-decoration: none;
-				display: inline-block;
-				&::after {
-					content: '';
-					display: block;
-					width: 0;
-					height: 2px;
-					background: #3b3b3b;
-					transition: width 0.3s;
-				}
-				&:hover::after {
-					width: 100%;
-					transition: width 0.3s;
-				}
-			}
-		}
-		hr {
-			border: none;
+}
+
+body {
+	font-family: 'Outfit', sans-serif;
+	background-color: var(--black-1);
+	color: var(--white);
+}
+
+section,
+footer {
+	padding: 50px 10%;
+	overflow: hidden;
+	scroll-margin-top: 100px;
+}
+
+a {
+	color: var(--white);
+	&.drawline {
+		text-decoration: none;
+		display: inline-block;
+		&::after {
+			content: '';
+			display: block;
+			width: 0;
 			height: 2px;
-			// border-radius: 50%;
-			background-color: #e6e8ea;
-			width: 200px;
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%);
+			background: var(--white);
+			transition: width 0.3s;
 		}
-		h1 {
-			font-size: 5rem;
-			font-weight: 700;
-			color: #000;
-		}
-		h2 {
-			font-size: 2rem;
-			font-weight: 700;
-			padding: 5px 0;
-		}
-		h3 {
-			font-size: 1.2rem;
-			font-weight: 700;
-		}
-		h4 {
-			font-size: 1.1rem;
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 4px;
-			color: #5edfff;
+		&:hover::after {
+			width: 100%;
+			transition: width 0.3s;
 		}
 	}
+}
+
+h1 {
+	font-size: 7rem;
+	font-weight: 700;
+	@media only screen and (max-width: 920px) {
+		font-size: 5rem;
+	}
+}
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	@media only screen and (max-width: 920px) {
+		font-size: 1.5rem;
+	}
+}
+h3 {
+	font-size: 1.2rem;
+	font-weight: 700;
 }
 
 // Slide in right, fade in
