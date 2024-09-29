@@ -5,7 +5,6 @@ export function glow(node: HTMLElement, options: { glowColor: string; background
 	const updateBackground = () => {
 		const x = window.scrollX + clientX;
 		const y = window.scrollY + clientY;
-		console.log(x, y);
 		const xy = `${x}px ${y}px`;
 		node.style.background = `radial-gradient(circle ${window.innerHeight}px at ${xy}, ${options.glowColor}, ${options.backgroundColor}`;
 	};
