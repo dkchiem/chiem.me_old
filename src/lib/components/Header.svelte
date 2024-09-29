@@ -5,9 +5,7 @@
 
 	onMount(() => {
 		addHeaderBottomBorder();
-		document.addEventListener('scroll', (e) => {
-			addHeaderBottomBorder();
-		});
+		document.addEventListener('scroll', addHeaderBottomBorder);
 	});
 
 	let navOpen = false;
