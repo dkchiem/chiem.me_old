@@ -18,13 +18,6 @@
 	<h2>Portfolio</h2>
 	<div id="projects">
 		<Project
-			title="MakeABud.com"
-			description="An anonymous chat platform to meet new people at university."
-			image="makeabud.jpg"
-			projectLink="https://makeabud.com"
-			imageFit
-		/>
-		<Project
 			title="Autonomously Navigating Robot"
 			description="Paper on implementing SLAM and autonomous navigation on a TurtleBot3"
 			image="implementing-slam-and-autonomous-navigation-on-a-turtlebot3.jpg"
