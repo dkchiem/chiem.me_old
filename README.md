@@ -1,3 +1,5 @@
+This repository is deprecated. The active version is [dkchiem/chiem.me](https://github.com/dkchiem/chiem.me). 
+
 # chiem.me
 
 My personal website
